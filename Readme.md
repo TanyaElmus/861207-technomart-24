@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Tanya Elmus](https://up.htmlacademy.ru/htmlcss/24/user/861207).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попенко] (https://htmlacademy.ru/profile/id66243).
 
 ---
 
