@@ -7,21 +7,22 @@
   <body>
 <header class="main-header">
       <a class="header_logo">
-        <img scr="logo-technomart.svg" alt="Логотип Техномарт">
+        <img src="img/svg-technomart/logo-technomart.svg" width="136.5" height="21.59" class="logo" alt="Логотип Техномарт">
       </a>
+<input type="search" name="search" id="search">
+     <img src="img/svg-technomart/icon-search.svg" class="search" alt="Поиск"></img>
 <ul class="navigation">
-        <li><a href="#" img scr="icon-search">Поиск</a></li>
-        <li><a href="#">Закладки</a></li>
-        <li class="button button-red"><a href="#">Корзина</a></li>
-        <li class="button button-green"><a href="#">Оформить заказ</a></li>
+     <li><a href="#">Закладки</a></li>
+     <li class="button button-red"><a href="#">Корзина</a></li>
+     <li class="button button-green"><a href="#">Оформить заказ</a></li>
 </ul>
-<div class-"contacts">
+<div class="contacts">
      <p class="about"> Интернет-магазин строительных материалов и интсрументов</p>
      <p class="number">+7(812)555-05-55</p>
      <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
 </div>
 <div>
-     <p> <a href="name-id.html" img scr="icon-user">Равшан Джамшутович</a></p>
+     <p> <a href="name-id.html" img src="img/svg-technomart/icon-user">Равшан Джамшутович</a></p>
  <ul>
     <li><a href="#">Мои заказы </a></li>
     <li><a href="#">Личный кабинет</a></li>
@@ -47,7 +48,7 @@
   </ul>
 </section>
 
-<main class="main_goots"
+<main class="main_goots">
 <div class="goods">
     <h3>Перфораторы</h3>
 <ul class="sorting">
@@ -57,11 +58,18 @@
     <li><a href="#">По функционалу</a></li>
 </ul>
 
+  <!-- Здесь будет сортировка по цене -->
 <section class="filters">
-  <p>Фильтр</p>
-  <h4>Цена<h4>
-    <!-- Здесь будет сортировка по цене -->
-<form class="filter"  method="get"  action="?">
+  <p>Фильтр:</p>
+<form class="price-filter">
+  <fieldset>
+    <legend>Цена:</legend>
+  <input type="range" id="price" min="1" max="30000">
+  <output name="price-filter"></output>
+  </fieldset>
+</form>
+
+<form class="filter" method="get" action="?">
 <fieldset>
     <legend>Производители:</legend>
 <ul>
@@ -86,7 +94,7 @@
       id="filter-battery"><label for="filter-battery">Аккумуляторные</label></li>
   <li class="filter_option">
     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="battery" value="mains"
-     id="filter-battery"><label for="filter-battery">Сетевые</label></li>
+      id="filter-battery"><label for="filter-battery">Сетевые</label></li>
 </ul>
 </fieldset>
 <button type="submit" class="filter-button">Показать</button>
@@ -176,7 +184,7 @@ BFG 3000</h3>
     <p class="goods_price_new">15500 Р.</p>
 <div class="goods_buy">
     <a href="#">Купить</a>
-    <button type="button button-save">В закладки></button>
+    <button type="button button_save">В закладки></button>
 </div>
 
 <p class="goods_img">
@@ -188,7 +196,7 @@ BFG 6000</h3>
     <p class="goods_price_new">25500 Р.</p>
 <div class="goods_buy">
     <a href="#">Купить</a>
-    <button type="button button-save">В закладки></button>
+    <button type="button button_save">В закладки></button>
 </div>
 
 <p class="goods_img">
