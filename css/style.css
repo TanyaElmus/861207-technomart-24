@@ -1,11 +1,13 @@
+
+
 body {
   margin: 0;
-  font-family: "Cuprum", "PT Sans";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 a {
@@ -13,207 +15,250 @@ a {
   color:#ffffff;
 }
 
-.header-logo{
-  background-color:#ee3643;
-  border-bottom: 4px solid #b52933;
-  width: 220px;
-  height: 42px;
+ul{
+    list-style: none;
 }
+
+ .header-logo{
+     background-color: #ee3643;
+     width: 221px;
+     text-align: center;
+     padding-top: 13px;
+     padding-bottom: 12px;
+     box-shadow: 0px 5px 0px 0px #b52933;
+}
+
+.header-logo a:hover {
+  background-color: #ee3643;
+}
+
+.main-header {
+  background-color: #f3f7f9;
+}
+
 .main-navigation {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 18px;
   color: #ffffff;
   background-color: #293449;
 }
 
 .navigation,
-.site-navigation {
+.navigation-top,
+.user-navigation,
+.site-navigation,
+.popular-list,
+.brands-list,
+.slider {
   list-style: none;
-  color: #ffffff;
+}
+
+.navigation-top {
   background-color: #293449;
 }
 
-.navigation a,
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
+.user-navigation li a {
+  color: #000000;
+}
+.navigation {
+  background-color: #32425c;
+  box-shadow: 0px 5px 0px 0px #293449;
 }
 
-.site-navigation a:hover {
-background-color: #32425c;
-}
-
-.site-navigation a:focus {
-  background-color: #1d2739;
-}
-
-.contacts {
-  background-color: #f3f7f8;
+.order-green {
+    background-color: #63a63e;
+    width: 151px;
+    height: 42px;
+    text-align: center;
 }
 
 .about {
-  font-style: italic;
-  font-weight: 700;
   font-size: 16px;
-  text-transform: lowercase;
+  line-height: 23px;
   color: #ee3643;
+  font-style:italic;
 }
 
-.user-navigation {
-  text-decoration: none;
+.number {
   font-size: 21px;
-  color: #f3f7f8;
-}
-.user-navigation a {
-  color: #000000;
+  line-height: 21px;
+  color: #ee3643;
+  text-align: center;
+  border: 3px  solid: white;
 }
 
-.popular-goods,
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  text-align: center;
+}
+
+.navigation a:hover,
+.navigation-top a:hover {
+background-color: #212a3a;
+}
+
+.navigation a:focus
+.navigation-top a:focus {
+background-color: #161d29;
+}
+
+/* <!--здесь будет основной сервис сайта --> */
+
+.popular-goods {
+background-color: #f9f5f0;
+}
+
 .popular-brands {
-  background-color: #c4aafc;
-}
-
-.popular-list {
-  list-style: none;
-  /* width: 220px;
-  height: 310px;
-  border: 1px solid #eaeaea; */
+  background-color: #f9f5f0;
 }
 
 .popular-title {
-  font-style: regular;
   font-size: 30px;
+  line-height: 30px;
   color: #32425c;
 }
 
-.red-button a {
+.red-button {
   background-color: #ee3643;
-  width: 253px;
-  height:38px;
+  width: 254px;
+  height: 39px;
+  border-radius: 2px;
 }
 
-.goods-title,
-.popular-title {
+.popular-list li {
+  font-family: "PT Sans";
+  font-weight: bold;
+}
+
+.goods-title {
+  font-family: "PT Sans";
+  font-weight: bold;
   font-size: 18px;
-  color: #000000;
+  line-height: 20px;
 }
 
 .goods-price {
+  font-family: "PT Sans";
+  font-weight: bold;
   font-size: 17px;
-  text-decoration: line-through;
+  line-height: 18px;
   color: #a9a9a9;
+  text-decoration: line-through;
 }
 
-.goods-price-new{
+.goods-price-new {
+  font-family: "PT Sans";
+  font-weight: bold;
   font-size: 17px;
+  line-height: 18px;
   text-align: center;
-  vertical-align: center;
   color: #ffffff;
   background-color: #ee3643;
-  width: 140px;
-  height: 39px;
-  border-radius: 3px;
-}
-
-.goods-buy a {
-  font-size: 14px;
-  background-color: #63a63e;
-  width: 135px;
+  width: 141px;
   height: 38px;
-  border-radius: 3px;
 }
 
-.goods-buy a:hover {
-  background-color: #5fbb2d;
-}
-
-.goods-buy a:focus {
-  background-color: #518534;
-}
-
-.btn-save {
-  font-size: 14px;
-  text-align: center;
-  border:3px solid #63a63e;
-  height:35px;
-  background: #fff;
-  color:#32425c;
-}
-.btn-save:hover{
-  border: 3px solid #32425c;
-}
-.btn-save:focus{
-  border: 3px solid #c1c6ce;
-  color:#c1c6ce;
-  outline: none;
-}
-
-.brands-list {
-  list-style: none;
-}
-
-.brands-logo {
-  width: 220px;
-  height: 144px;
-  border: 1px solid #eaeaea;
-}
+/* .btn-save {
+  border: 2px;
+  color:
+} */
 
 .main-service {
-  background-color: #f4f8fa;
+    background-color: #f4f7f9;
 }
 
-.service,
-.about-company,
-.company-contacts {
-font-size: 30px;
-color: #000000;
+.service {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.service p,
-.about-company p,
+.service p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.slider-title {
+    font-size: 36px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+/* не работает */
+/* .button-send {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff5357;
+  width: 196px;
+  height: 38px;
+} */
+
+.about-company h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* ??? */
+.company-contacts h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-company p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .company-contacts p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
 
-.slider {
-  list-style: none;
-}
-
-.slider h3 {
-  font-size: 36px;
-  color: #32425c;
-}
-
-.slider p {
-  font-size: 13px;
-  line-height: 24px;
+.list li {
+  font-size: 18px;
+  line-height: 20px;
   color: #000000;
-  text-transform: lowercase;
 }
 
-.list  {
+.redline {
+    color: #ee3643;
+  }
+
+      /* ?????????   прилип к футеру????????? */
+/* .write-us {
+    position: absolute;
+} */
+
+
+
+.main-footer {
+  background-color: #32425c;
+}
+
+.footer-contacts {
   font-size: 18px;
   line-height: 24px;
-  list-style: none;
-}
-
-.footer-navigation,
-.footer-catalog,
-.footer-contacts {
-  background-color: #32425c;
-  text-decoration: none;
-  list-style: none;
-}
-
-.footer-contacts {
-  font-size: 18px;
-  colot: #ffffff;
+  color: #f3f7f9;
 }
 
 .footer-navigation {
-  font-size: 18px;
+  text-decoration: none;
+  color:#ffffff;
+  list-style: none;
 }
 
 .footer-navigation a:hover {
@@ -221,39 +266,114 @@ color: #000000;
 }
 
 .footer-navigation a:focus {
-  color: #f1f5f7;
+ color:  #9ea5af
 }
 
-.footer-catalog{
-  font-size: 18px;
-  line-height: 24px;
+.footer-catalog a {
+  text-decoration: none;
   color: #ffd180;
+  list-style: none;
 }
 
 .footer-catalog a:hover {
-  color: #ffd180;
   text-decoration: underline;
 }
 
 .footer-catalog a:focus {
-  color: #ffd180;
-}
-
-.footer-bottom a {
-  text-decoration: none;
+ color: #ad956f;
 }
 
 .footer-bottom {
   background-color: #293449;
-  list-style: none;
+}
+
+.copyright {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
 }
 
 .footer-social {
-  text-align: center;
   list-style: none;
+  text-decoration: none;
+  text-align: center;
 }
 
-.copyright  {
+.white {
   font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
+}
+
+.gold {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+
+
+
+/* catalog */
+
+.basket-red {
+  background-color: #ee3643;
+  width: 151px;
+  height: 42px;
+  text-align: center;
+}
+
+.name-id a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.name-id a:hover {
+  color: #;
+}
+
+.name-id a:focus {
+  color: #000000;
+  opacity:30%;
+}
+
+.user-area a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-area a:hover {
+color: #ee3643;
+}
+
+.user-area a:focus {
+  color: #32425c;
+  opacity: 30%;
+}
+
+.perforators-title h1 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.perforators {
+  background-color: #f2f6f8;
+}
+
+.perforators-about h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.perforators-about p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
 }

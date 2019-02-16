@@ -3,42 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
-  <a class="header-logo" href="index.html">
-    <img src="img/svg-technomart/logo-technomart.svg" class="logo" alt="Логотип Техномарт">
-  </a>
+  <div class="header-logo">
+      <a href="#">
+          <img src="img/svg-technomart/logo-technomart.svg" width="136.5px" height="21.59px" class="logo" alt="Логотип Техномарт">
+      </a>
+  </div>
  <form action="search">
    <input type="search" name="search" id="search">
-    <button type="submit"></button>
+    <!-- <button type="submit"></button> -->
   </form>
  <ul class="navigation">
-   <li><a href="#">Закладки</a></li>
-    <li class="button button-red"><a href="#">Корзина</a></li>
-   <li class="button button-green"><a href="#">Оформить заказ</a></li>
+   <li>
+     <a href="#">Закладки</a>
+   </li>
+    <li class="basket-red"><a href="#">Корзина: 10</a>
+    </li>
+    <li class="order-green">
+      <a href="#">Оформить заказ</a>
+    </li>
  </ul>
  <div class="contacts">
    <p class="about"> Интернет-магазин строительных материалов и интсрументов</p>
      <p class="number">+7(812)555-05-55</p>
    <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
  </div>
-   <p><a href="name-id.html">Равшан Джамшутович</a></p>
+ <div class="user">
+   <p class="name-id">
+     <a href="name-id.html">Равшан Джамшутович</a>
+   </p>
     <button class="logout">выйти</button>
- <ul>
-   <li><a href="#">Мои заказы </a></li>
-    <li><a href="#">Личный кабинет</a></li>
+ <ul class="user-area">
+   <li><a href="#">Мои заказы </a>
+   </li>
+    <li><a href="#">Личный кабинет</a>
+    </li>
  </ul>
+</div>
 
 <nav class="navigation">
  <ul class="site-navigation">
-   <li><a href="index.html">Главная</a></li>
-    <li><a href="company.html">Компания</a></li>
-     <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="news.html">Новости</a></li>
-     <li><a href="special.html">Спецпредложения</a></li>
-    <li><a href="delivery.html">Доставка</a></li>
-  <li> <a href="contact.html">Контакты</a></li>
+   <li>
+      <a href="index.html">Главная</a>
+   </li>
+    <li>
+      <a href="company.html">Компания</a>
+    </li>
+     <li>
+       <a href="catalog.html">Каталог</a>
+     </li>
+      <li>
+        <a href="news.html">Новости</a>
+      </li>
+     <li>
+       <a href="special.html">Спецпредложения</a>
+     </li>
+    <li>
+       <a href="delivery.html">Доставка</a>
+    </li>
+  <li>
+    <a href="contact.html">Контакты</a>
+  </li>
  </ul>
 </nav>
 </header>
@@ -54,7 +84,7 @@
  </section>
 
 <section class="main-goots">
-  <div class="goods">
+  <div class="perforators-title">
     <h1>Перфораторы</h1>
   </div>
  <p>Сортировка:</p>
@@ -138,7 +168,7 @@
      </div>
   <div class="goods-buy">
     <a href="#">Купить</a>
-     <button type="button">В закладки></button>
+     <button type="button">В закладки</button>
   </div>
   </li>
 
@@ -155,7 +185,7 @@
        </div>
     <div class="goods-buy">
       <a href="#">Купить</a>
-       <button type="button">В закладки></button>
+       <button type="button">В закладки</button>
     </div>
     </li>
 
@@ -170,7 +200,7 @@
      </div>
  <div class="goods-buy">
    <a href="#">Купить</a>
-     <button type="button">В закладки></button>
+     <button type="button">В закладки</button>
  </div>
  </li>
 
@@ -183,7 +213,7 @@
       </div>
    <div class="goods-buy">
     <a href="#">Купить</a>
-      <button type="button">В закладки></button>
+      <button type="button">В закладки</button>
    </div>
   </li>
 
@@ -198,7 +228,7 @@
     </div>
   <div class="goods-buy">
   <a href="#">Купить</a>
-    <button type="button">В закладки></button>
+    <button type="button">В закладки</button>
   </div>
   </li>
 
@@ -213,7 +243,7 @@
     </div>
   <div class="goods-buy">
   <a href="#">Купить</a>
-    <button type="button">В закладки></button>
+    <button type="button">В закладки</button>
   </div>
   </li>
 
@@ -227,7 +257,7 @@
     </div>
   <div class="goods-buy">
   <a href="#">Купить</a>
-    <button type="button">В закладки></button>
+    <button type="button">В закладки</button>
   </div>
   </li>
 
@@ -242,7 +272,7 @@
     </div>
   <div class="goods-buy">
   <a href="#">Купить</a>
-    <button type="button">В закладки></button>
+    <button type="button">В закладки</button>
   </div>
   </li>
 
@@ -257,7 +287,7 @@
     </div>
   <div class="goods-buy">
   <a href="#">Купить</a>
-    <button type="button">В закладки></button>
+    <button type="button">В закладки</button>
   </div>
   </li>
 
@@ -271,7 +301,7 @@
     </div>
   <div class="goods-buy">
   <a href="#">Купить</a>
-    <button type="button">В закладки></button>
+    <button type="button">В закладки</button>
   </div>
   </li>
 </ul>
@@ -295,18 +325,18 @@
     <li class="page-next"><a href="#">Следующая</a></li>
  </ul>
 
- <section class="about">
-   <div class="goods-about">
+ <section class="perforators">
+   <div class="perforators-about">
     <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
    <p> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
     В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-<div>
+     </div>
 </section>
 
 <footer class="main-footer">
   <div class="footer_top">
-      <a class="header_logo">
+      <a class="header-logo">
         <img src="img/svg-technomart/logo-technomart.svg"  class="logo" alt="Логотип Техномарт">
       </a>
      <p class="footer-contacts">
@@ -341,8 +371,19 @@
    <li><a href="http://instagram.com" class="sotial-icon sotial-icon-instagram">
      <span class="visually-hidden">Техномарт в Инстаграме</span></a></li>
   </ul>
-    <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-     <p>Разработано: <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+
+  <img src="./img/svg-technomart/icon-vk.svg" alt="vk">
+  <img src="./img/svg-technomart/icon-fb.svg" alt="facebook">
+  <img src="./img/svg-technomart/icon-insta.svg" alt="insta">
+
+  <p>
+    <span class="white">Обратная связь: </span>
+    <a href="mailto:mail@htmlacademy.ru"><span class="gold">mail@htmlacademy.ru</span></a>
+  </p>
+  <p>
+    <span class="white">Разработано: </span> <a href="htmlacademy.ru"><span class="gold">htmlacademy.ru</span></a>
+  </p>
+
 </div>
 </footer>
  </body>
