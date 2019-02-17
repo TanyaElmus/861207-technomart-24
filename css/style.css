@@ -15,13 +15,14 @@ a {
   color:#ffffff;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
  .header-logo{
      background-color: #ee3643;
-     width: 221px;
+     width: 220px;
+     height: 42;
      text-align: center;
      padding-top: 13px;
      padding-bottom: 12px;
@@ -60,11 +61,24 @@ ul{
 .user-navigation li a {
   color: #000000;
 }
+
+.login-link,
+.registration-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
 .navigation {
   background-color: #32425c;
   box-shadow: 0px 5px 0px 0px #293449;
 }
 
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+
+}
 .order-green {
     background-color: #63a63e;
     width: 151px;
@@ -84,7 +98,9 @@ ul{
   line-height: 21px;
   color: #ee3643;
   text-align: center;
-  border: 3px  solid: white;
+  border: 3px  solid white;
+  width: 271px;
+  height: 46px;
 }
 
 .address {
@@ -118,9 +134,15 @@ background-color: #f9f5f0;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
+  font-weight: 400;
+  text-transform: uppercase;
+
 }
 
 .red-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   background-color: #ee3643;
   width: 254px;
   height: 39px;
@@ -128,19 +150,19 @@ background-color: #f9f5f0;
 }
 
 .popular-list li {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
 }
 
 .goods-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
 
 .goods-price {
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -149,7 +171,7 @@ background-color: #f9f5f0;
 }
 
 .goods-price-new {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -160,14 +182,23 @@ background-color: #f9f5f0;
   height: 38px;
 }
 
-/* .btn-save {
-  border: 2px;
-  color:
-} */
+/* ???? */
+.btn-save {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #32425c;
+  text-transform: uppercase;
+  border: 3px  solid #63a63e;
+  width: 135px;
+  height: 38px;
+  background-color: none;
+}
 
 .main-service {
     background-color: #f4f7f9;
 }
+
 
 .service {
   font-size: 30px;
@@ -177,7 +208,9 @@ background-color: #f9f5f0;
   text-transform: uppercase;
 }
 
-.service p {
+.slider-about {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -186,12 +219,13 @@ background-color: #f9f5f0;
 .slider-title {
     font-size: 36px;
     line-height: 24px;
+    font-weight: 400;
     text-transform: uppercase;
     color: #32425c;
 }
 
-/* не работает */
-/* .button-send {
+/* ??? */
+ .button-credit {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -199,11 +233,12 @@ background-color: #f9f5f0;
   background-color: #ff5357;
   width: 196px;
   height: 38px;
-} */
+}
 
 .about-company h3 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 }
@@ -216,11 +251,6 @@ background-color: #f9f5f0;
   text-transform: uppercase;
 }
 
-.about-company p {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
-}
 
 .company-contacts p {
   font-size: 13px;
@@ -249,13 +279,16 @@ background-color: #f9f5f0;
   background-color: #32425c;
 }
 
-.footer-contacts {
+/* ???? */
+.footer-contacts p {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
 }
 
-.footer-navigation {
+.footer-navigation a {
+  font-size: 18px;
+  line-height: 24px;
   text-decoration: none;
   color:#ffffff;
   list-style: none;
@@ -270,6 +303,8 @@ background-color: #f9f5f0;
 }
 
 .footer-catalog a {
+  font-size: 18px;
+  line-height: 24px;
   text-decoration: none;
   color: #ffd180;
   list-style: none;
@@ -287,9 +322,9 @@ background-color: #f9f5f0;
   background-color: #293449;
 }
 
-.copyright {
-  font-size: 18px;
-  line-height: 24px;
+.copyright  {
+  font-size: 16px;
+  line-height: 18px;
   color: #f3f7f9;
 }
 
@@ -330,7 +365,7 @@ background-color: #f9f5f0;
 }
 
 .name-id a:hover {
-  color: #;
+  color: #000000;
 }
 
 .name-id a:focus {
@@ -360,19 +395,37 @@ color: #ee3643;
   font-weight: 400;
   color: #32425c;
   background-color: #f2f6f8;
+  text-transform: uppercase;
 }
 
 .perforators {
   background-color: #f2f6f8;
 }
 
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* .sorting-by ??? */
+
 .perforators-about h3 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: #000000;
 }
 
 .perforators-about p {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
