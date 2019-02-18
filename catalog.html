@@ -10,6 +10,8 @@
   <body>
 
 <header class="main-header">
+    <nav class="main-navigation">
+  <div class="wrap main-navigation-wrap">
   <div class="header-logo">
       <a href="#">
           <img src="img/svg-technomart/logo-technomart.svg" width="136.5px" height="21.59px" class="logo" alt="Логотип Техномарт">
@@ -20,16 +22,20 @@
     <!-- <button type="submit"></button> -->
   </form>
  <ul class="navigation">
-   <li>
+   <li class="marks">
      <a href="#">Закладки</a>
    </li>
-    <li class="basket-red"><a href="#">Корзина: 10</a>
+    <li class="basket-red">
+      <a href="#">Корзина: 10</a>
     </li>
     <li class="order-green">
       <a href="#">Оформить заказ</a>
     </li>
  </ul>
- <div class="contacts">
+   </div>
+</nav>
+
+ <div class="contacts wrap">
    <p class="about"> Интернет-магазин строительных материалов и интсрументов</p>
      <p class="number">+7(812)555-05-55</p>
    <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
@@ -169,13 +175,11 @@
        <p class="goods-price-new">15500 Р.</p>
      </div>
   <div class="goods-buy">
-    <a href="#">Купить</a>
+    <a class="btn-buy" href="#">Купить</a>
      <button class="btn-save" type="button">В закладки</button>
   </div>
   </li>
 
-  <section class="goods">
-   <ul class="goods-list">
      <li class="goods-item">
        <div class="goods-about">
          <p class="goods-img">
@@ -186,8 +190,36 @@
          <p class="goods-price-new">25500 Р.</p>
        </div>
     <div class="goods-buy">
-      <a href="#">Купить</a>
+      <a class="btn-buy" href="#">Купить</a>
        <button class="btn-save" type="button">В закладки</button>
+    </div>
+    </li>
+
+    <li class="goods-item">
+      <div class="goods-about">
+          <p class="goods-img">
+          </p>
+        <h3 class="goods-title">Перфоратор BOSCH BFG 2000</h3>
+          <p class="goods-price-new">12500 Р.</p>
+        </div>
+     <div class="goods-buy">
+      <a class="btn-buy" href="#">Купить</a>
+        <button class="btn-save" type="button">В закладки</button>
+     </div>
+    </li>
+
+    <li class="goods-item">
+      <div class="goods-about">
+        <p class="goods-img">
+        <img src="img/index-img/perforator-1.png" alt="Перфоратор-1">
+        </p>
+      <h3 class="goods-title">Перфоратор BOSCH BFG 3000</h3>
+          <p class="goods-price">22500 Р.</p>
+        <p class="goods-price-new">15500 Р.</p>
+      </div>
+    <div class="goods-buy">
+    <a class="btn-buy" href="#">Купить</a>
+      <button class="btn-save" type="button">В закладки</button>
     </div>
     </li>
 
@@ -201,38 +233,12 @@
        <p class="goods-price-new">25500 Р.</p>
      </div>
  <div class="goods-buy">
-   <a href="#">Купить</a>
+   <a class="btn-buy" href="#">Купить</a>
      <button class="btn-save" type="button">В закладки</button>
  </div>
  </li>
 
-  <li class="goods-item">
-    <div class="goods-about">
-        <p class="goods-img">
-        </p>
-      <h3 class="goods-title">Перфоратор BOSCH BFG 2000</h3>
-        <p class="goods-price-new">12500 Р.</p>
-      </div>
-   <div class="goods-buy">
-    <a href="#">Купить</a>
-      <button class="btn-save" type="button">В закладки</button>
-   </div>
-  </li>
 
-  <li class="goods-item">
-    <div class="goods-about">
-      <p class="goods-img">
-      <img src="img/index-img/perforator-1.png" alt="Перфоратор-1">
-      </p>
-    <h3 class="goods-title">Перфоратор BOSCH BFG 3000</h3>
-        <p class="goods-price">22500 Р.</p>
-      <p class="goods-price-new">15500 Р.</p>
-    </div>
-  <div class="goods-buy">
-  <a href="#">Купить</a>
-    <button class="btn-save" type="button">В закладки</button>
-  </div>
-  </li>
 
   <li class="goods-item">
     <div class="goods-about">
@@ -244,7 +250,7 @@
       <p class="goods-price-new">25500 Р.</p>
     </div>
   <div class="goods-buy">
-  <a href="#">Купить</a>
+  <a class="btn-buy" href="#">Купить</a>
     <button class="btn-save" type="button">В закладки</button>
   </div>
   </li>
@@ -258,7 +264,7 @@
       <p class="goods-price-new">25500 Р.</p>
     </div>
   <div class="goods-buy">
-  <a href="#">Купить</a>
+  <a class="btn-buy" href="#">Купить</a>
     <button class="btn-save" type="button">В закладки</button>
   </div>
   </li>
@@ -273,7 +279,7 @@
       <p class="goods-price-new">15500 Р.</p>
     </div>
   <div class="goods-buy">
-  <a href="#">Купить</a>
+  <a class="btn-buy" href="#">Купить</a>
     <button class="btn-save" type="button">В закладки</button>
   </div>
   </li>
@@ -288,7 +294,7 @@
       <p class="goods-price-new">25500 Р.</p>
     </div>
   <div class="goods-buy">
-  <a href="#">Купить</a>
+  <a class="btn-buy" href="#">Купить</a>
     <button class="btn-save" type="button">В закладки</button>
   </div>
   </li>
@@ -302,7 +308,7 @@
       <p class="goods-price-new">12500 Р.</p>
     </div>
   <div class="goods-buy">
-  <a href="#">Купить</a>
+  <a class="btn-buy" href="#">Купить</a>
     <button class="btn-save" type="button">В закладки</button>
   </div>
   </li>
