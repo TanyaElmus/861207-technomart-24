@@ -31,7 +31,7 @@ ul {
     list-style: none;
 }
 
- .header-logo{
+ .header-logo {
      background-color: #ee3643;
      width: 220px;
      height: 42px;
@@ -87,11 +87,11 @@ ul {
   margin-right: 45px;
 }
 
-.contacts-wrap {
+.contacts {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 158px;
+
 }
 
 .user-navigation li a {
@@ -106,12 +106,21 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  float: left;
+   /* margin-left: 10px; */
+}
+
+
+
+.user-link {
+  margin-left: auto;
 }
 
 .login-link {
   width: 122px;
   height: 45px;
   background-color: #ffffff;
+  margin-right: 10px;
 }
 
 .registration-link {
@@ -120,23 +129,16 @@ ul {
   background-color: #ffffff;
 }
 
-.navigation {
-  background-color: #32425c;
-  box-shadow: 0px 5px 0px 0px #293449;
-  height: 55px;
-  width: 940px;
-  padding: 0 10px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.login-link a:hover,
+.registration-link a:hover {
+  color: #ee3643;
 }
 
-.site-navigation {
-  font-size: 17px;
-  line-height: 17px;
-  display: flex;
+.login-link a:focus,
+.registration-link a:focus {
+  opacity: 0.3%;
 }
+
 
 .order-green {
     background-color: #63a63e;
@@ -148,6 +150,11 @@ ul {
     justify-content: center;
 }
 
+.about-info {
+  align-items: center;
+  justify-content: center;
+}
+
 .about {
   font-size: 16px;
   line-height: 23px;
@@ -155,6 +162,7 @@ ul {
   font-style:italic;
   height: 59px;
   width: 190px;
+  margin-left: 30px;
 }
 
 .number {
@@ -178,6 +186,18 @@ ul {
   text-align: center;
 }
 
+.navigation {
+  background-color: #32425c;
+  box-shadow: 0px 5px 0px 0px #293449;
+  height: 55px;
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation a:hover,
 .navigation-top a:hover {
 background-color: #212a3a;
@@ -188,7 +208,15 @@ background-color: #212a3a;
 background-color: #161d29;
 }
 
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* <!--здесь будет основной сервис сайта --> */
+
 
 .popular-goods {
  background-color: #f9f5f0;
@@ -198,7 +226,8 @@ background-color: #161d29;
  margin: 0 auto;
  display: flex;
  align-items: center;
- justify-content: center;
+ justify-content: space-between;
+ margin-top: 50px;
 }
 
 .red-button {
@@ -222,9 +251,17 @@ background-color: #161d29;
   width: 220px;
   height: 317px;
   border: 1px solid #eaeaea;
-
 }
 
+.goods-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.popular-list {
+  margin-top: 28px;
+}
 .popular-list li {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -235,6 +272,7 @@ background-color: #161d29;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
 }
 
 .goods-price {
@@ -244,6 +282,7 @@ background-color: #161d29;
   line-height: 18px;
   color: #a9a9a9;
   text-decoration: line-through;
+  text-align: center;
 }
 
 .goods-price-new {
@@ -259,6 +298,10 @@ background-color: #161d29;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .btn-buy  {
@@ -296,7 +339,7 @@ background-color: #161d29;
 .popular-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 20px;
 }
 
@@ -309,6 +352,7 @@ background-color: #161d29;
   margin-left: 29px;
 }
 
+
 .popular-brands {
   background-color: #f9f5f0;
   height: 89px;
@@ -318,21 +362,34 @@ background-color: #161d29;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 21px;
+  margin-top: 28px;
+
 }
 
 .brands-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 21px;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  margin-right: auto;
+  flex-basis: auto;.
 }
 
+.brands-logo {
+    width: 220px;
+    height: 145px;
+    border: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+  }
 
 .main-service {
     background-color: #f4f7f9;
+    margin-top: 108px;
 }
-
 
 .service {
   font-size: 30px;
@@ -340,15 +397,26 @@ background-color: #161d29;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+  padding-top: 45px;
 }
 
-.slider-about {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
+
+/* ?? */
+.servise-button {
+    height: 80px;
+    width: 240px;
+    background-color: #32425c;
+    margin-right: auto;
+  }
+
+  .servise-button:first-child{
+      background-color: ;
+    }
+
+.slider {
+  display: flex;
 }
+
 
 .slider-title {
     font-size: 36px;
@@ -370,6 +438,11 @@ background-color: #161d29;
   border:none;
 }
 
+.infotmation {
+  margin-top: 75px;
+}
+
+
 .about-company h3 {
   font-size: 30px;
   line-height: 30px;
@@ -378,6 +451,37 @@ background-color: #161d29;
   text-transform: uppercase;
 }
 
+.slider-about {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  width: 540px;
+  /* padding-bottom: 32px; */
+}
+
+.button-about {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  width: 220px;
+  height: 39px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0px;
+  margin: auto;
+  margin-left: auto; */
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
 
 .company-contacts  {
   font-size: 30px;
@@ -385,7 +489,6 @@ background-color: #161d29;
   color: #000000;
   text-transform: uppercase;
 }
-
 
 .company-contacts p {
   font-size: 13px;
@@ -403,7 +506,7 @@ background-color: #161d29;
     color: #ee3643;
   }
 
-      /* ?????????   прилип к футеру????????? */
+    /* форма */
 /* .write-us {
     position: absolute;
 } */
@@ -414,11 +517,16 @@ background-color: #161d29;
   background-color: #32425c;
 }
 
-
 .footer-contacts {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .footer-navigation a {
@@ -427,6 +535,7 @@ background-color: #161d29;
   text-decoration: none;
   color:#ffffff;
   list-style: none;
+padding-top: 28px;
 }
 
 .footer-navigation a:hover {
@@ -435,6 +544,11 @@ background-color: #161d29;
 
 .footer-navigation a:focus {
  color:  #9ea5af
+}
+
+.footer-catalog {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-catalog a {
