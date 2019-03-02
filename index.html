@@ -40,7 +40,7 @@
         <div class="contacts wrap">
             <p class="about"> Интернет-магазин строительных материалов и интсрументов</p>
 
-          <div class="about-info">
+            <div class="contacts-info">
             <p class="number">+7(812)555-05-55</p>
             <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
           </div>
@@ -51,15 +51,15 @@
             </ul>
         </div>
 
-        <nav class="navigation">
+        <nav class="navigation wrap">
             <ul class="site-navigation">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="company.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="special.html">Спецпредложения</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li> <a href="contact.html">Контакты</a></li>
+                <li class="site-navigation-menu"><a href="index.html">Главная</a></li>
+                <li class="site-navigation-menu"><a href="company.html">Компания</a></li>
+                <li class="site-navigation-menu"><a href="catalog.html">Каталог</a></li>
+                <li class="site-navigation-menu"><a href="news.html">Новости</a></li>
+                <li class="site-navigation-menu"><a href="special.html">Спецпредложения</a></li>
+                <li class="site-navigation-menu"><a href="delivery.html">Доставка</a></li>
+                <li class="site-navigation-menu"> <a href="contact.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -98,7 +98,7 @@
         </li>
       </div>
     </main> -->
-      
+
         <section class="popular wrap">
             <div class="popular-goods">
                 <h3 class="popular-title">Популярные товары:</h3>
@@ -156,6 +156,7 @@
                             <img src="img/index-img/perforator-4.png" width="218px" height="170px" alt="Перфоратор-4">
                         </p>
                         <h3 class="goods-title">Перфоратор BOSCH BFG 2000</h3>
+                        <p class="goods-price"></p>
                         <p class="goods-price-new">12500 Р.</p>
                     </div>
                     <div class="goods-buy">
@@ -235,38 +236,39 @@
                         <a class="credit-buttons" href="credit">Кредит</a>
                       </li>
                     </ul>
+                  </div>
+                    <ul class="slider">
+                        <li class="delivery">
+                            <h4 class="slider-title">Доставка</h4>
+                            <p class="slider-about">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                                Ведь мы неплохозаработаем, поднимая его на ваш этаж!</p>
+                            <img src="img/index-img/delivery.png" alt="Доставка">
+                        </li>
+
+                        <li class="guarantee">
+                            <h4 class="slider-title">Гарантия</h4>
+                                    <p class="slider-about">Если купленный у нас товар поломается или заискрит,
+                                        а также в случае пожара, спровоцированного его возгаранием,
+                                        вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                                        Дом уж восстановите как-нибудь сами.</p>
+                                    <img src="img/index-img/guarantee.png" alt="Гарантия">
+                        </li>
+
+                        <li class="credit">
+                            <h4 class="slider-title">Кредит</h4>
+                            <p class="slider-about">Залезть в долговую яму стало проще!
+                                Кредитные консультанты придут вам на помощь.</p>
+                            <img src="img/index-img/credit.png" alt="Кретит">
+                            <button class="button-credit" type="button" >Отправить заявку</button>
+                        </li>
+                    </ul>
                 </div>
-
-
-            <ul class="slider">
-                <li class="delivery">
-                    <h4 class="slider-title">Доставка</h4>
-                    <p class="slider-about">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                        Ведь мы неплохозаработаем, поднимая его на ваш этаж!</p>
-                    <img src="img/index-img/delivery.png" alt="Доставка">
-                </li>
-
-                <li class="guarantee">
-                    <h4 class="slider-title">Гарантия</h4>
-                            <p class="slider-about">Если купленный у нас товар поломается или заискрит,
-                                а также в случае пожара, спровоцированного его возгаранием,
-                                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-                                Дом уж восстановите как-нибудь сами.</p>
-                            <img src="img/index-img/guarantee.png" alt="Гарантия">
-                </li>
-
-                <li class="credit">
-                    <h4 class="slider-title">Кредит</h4>
-                    <p class="slider-about">Залезть в долговую яму стало проще!
-                        Кредитные консультанты придут вам на помощь.</p>
-                    <img src="img/index-img/credit.png" alt="Кретит">
-                    <button class="button-credit" type="button" >Отправить заявку</button>
-                </li>
-            </ul>
           </div>
         </section>
 
+
         <section class="infotmation wrap">
+
             <div class="about-company ">
                 <h3>Компания "Техномарт"</h3>
                 <p class="slider-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства
@@ -279,36 +281,15 @@
                 </ul>
                 <a class="button-about" href="about-company.html">Подробнее о компании</a>
             </div>
-        </section>
+            <div class="wrap-contacts">
+                <h3 class="company-contacts">Контакты</h3>
+                <p class="slider-about">Вы можете забрать товар сами, заехав в наш офис:</p>
+                <a href="#">
+                    <img class="map" src="img/index-img/map-1.jpg" width="300" height="158" alt="Карта">
+                </a>
+                <a class="write-us-btn" href="write-to-us.html">Заблудились?напишите нам</a>
+          </div>
 
-        <section class="map wrap">
-            <h3 class="company-contacts">Контакты</h3>
-            <p class="slider-about">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#">
-                <img class="map" src="img/index-img/map-1.jpg" width="300" height="158" alt="Карта">
-            </a>
-            <a class="red-button" href="write-to-us.html">Заблудились?напишите нам</a>
-        </section>
-
-        <section class="open-map">
-            <button class="close-map" type="button">закрыть</button>
-        </section>
-
-        <section class="write-us">
-            <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="write-item">
-                    <label for="name">Ваше имя:</label>
-                    <input type="name" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p class="write-item">
-                    <label for="e-mail">Ваш e-mail:</label>
-                    <input type="e-mail" name="e-mail" placeholder="email@example.com">
-                </p>
-                <p class="write-item">
-                    <label for id="text-letter">Текст письма:</label>
-                    <textarea name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
-                    <button class="button button-send" type="submit">Отправить</button>
-            </form>
         </section>
     </main>
 
@@ -372,6 +353,7 @@
             <img src="./img/svg-technomart/icon-fb.svg" alt="facebook">
             <img src="./img/svg-technomart/icon-insta.svg" alt="insta">
 
+        <div class="white-wrap">
             <p>
               <span class="white">Обратная связь: </span>
               <a href="mailto:mail@htmlacademy.ru"><span class="gold">mail@htmlacademy.ru</span></a>
@@ -379,7 +361,30 @@
             <p>
               <span class="white">Разработано: </span> <a href="htmlacademy.ru"><span class="gold">htmlacademy.ru</span></a>
             </p>
+          </div>
         </div>
     </footer>
+
+
+    <section class="open-map">
+        <button class="close-map" type="button">закрыть</button>
+    </section>
+
+    <section class="write-us">
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="write-item">
+                <label for="name">Ваше имя:</label>
+                <input type="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="write-item">
+                <label for="e-mail">Ваш e-mail:</label>
+                <input type="e-mail" name="e-mail" placeholder="email@example.com">
+            </p>
+            <p class="write-item">
+                <label for id="text-letter">Текст письма:</label>
+                <textarea name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
+                <button class="button button-send" type="submit">Отправить</button>
+        </form>
+    </section>
 </body>
 </html>

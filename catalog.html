@@ -9,37 +9,49 @@
   </head>
   <body>
 
-<header class="main-header">
-    <nav class="main-navigation">
-  <div class="wrap main-navigation-wrap">
-  <div class="header-logo">
-      <a href="#">
-          <img src="img/svg-technomart/logo-technomart.svg" width="136.5px" height="21.59px" class="logo" alt="Логотип Техномарт">
-      </a>
-  </div>
- <form action="search">
-   <input type="search" name="search" id="search">
-    <!-- <button type="submit"></button> -->
-  </form>
- <ul class="navigation">
-   <li class="marks">
-     <a href="#">Закладки</a>
-   </li>
-    <li class="basket-red">
-      <a href="#">Корзина: 10</a>
-    </li>
-    <li class="order-green">
-      <a href="#">Оформить заказ</a>
-    </li>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Техномарт</title>
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+         <header class="main-header">
+            <nav class="main-navigation">
+              <div class="wrap main-navigation-wrap">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/svg-technomart/logo-technomart.svg" width="136.5px" height="21.59px" class="logo" alt="Логотип Техномарт">
+                    </a>
+                </div>
+                <form class="search" action="search">
+                    <input type="search" name="search" id="search">
+                    <!--                <button type="submit"></button>-->
+                </form>
+                <ul class="navigation-top">
+                    <li class="marks">
+                        <a  href="#">Закладки</a>
+                    </li>
+                    <li class="basket">
+                        <a href="#">Корзина</a>
+                    </li>
+                    <li class="order-green">
+                            <a href="#">Оформить заказ</a>
+                    </li>
  </ul>
    </div>
 </nav>
 
- <div class="contacts wrap">
-   <p class="about"> Интернет-магазин строительных материалов и интсрументов</p>
-     <p class="number">+7(812)555-05-55</p>
-   <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
- </div>
+<div class="contacts wrap">
+    <p class="about"> Интернет-магазин строительных материалов и интсрументов</p>
+    <div class="contacts-info">
+    <p class="number">+7(812)555-05-55</p>
+    <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная,д.19/8</p>
+  </div>
+
  <div class="user">
    <p class="name-id">
      <a href="name-id.html">Равшан Джамшутович</a>
@@ -52,35 +64,22 @@
     </li>
  </ul>
 </div>
+</div>
 
-<nav class="navigation">
- <ul class="site-navigation">
-   <li>
-      <a href="index.html">Главная</a>
-   </li>
-    <li>
-      <a href="company.html">Компания</a>
-    </li>
-     <li>
-       <a href="catalog.html">Каталог</a>
-     </li>
-      <li>
-        <a href="news.html">Новости</a>
-      </li>
-     <li>
-       <a href="special.html">Спецпредложения</a>
-     </li>
-    <li>
-       <a href="delivery.html">Доставка</a>
-    </li>
-  <li>
-    <a href="contact.html">Контакты</a>
-  </li>
- </ul>
+<nav class="navigation wrap">
+    <ul class="site-navigation">
+        <li class="site-navigation-menu"><a href="index.html">Главная</a></li>
+        <li class="site-navigation-menu"><a href="company.html">Компания</a></li>
+        <li class="site-navigation-menu"><a href="catalog.html">Каталог</a></li>
+        <li class="site-navigation-menu"><a href="news.html">Новости</a></li>
+        <li class="site-navigation-menu"><a href="special.html">Спецпредложения</a></li>
+        <li class="site-navigation-menu"><a href="delivery.html">Доставка</a></li>
+        <li class="site-navigation-menu"> <a href="contact.html">Контакты</a></li>
+    </ul>
 </nav>
 </header>
 
-<main class="contain">
+<main class="contain wrap">
  <section class="breadcrumbs">
   <ol>
    <li><a href="index.html">Главная</a></li>
@@ -91,9 +90,11 @@
  </section>
 
 <section class="main-goots">
+  <div class="perforators wrap">
   <div class="perforators-title">
     <h1>Перфораторы</h1>
   </div>
+</div>
 
 <div class="sorting">
   <p>Сортировка:</p>
@@ -163,8 +164,8 @@
  </section>
 
 
-<section class="goods">
- <ul class="goods-list">
+<section class="goods wrap">
+ <ul class="goods-list popular-list">
    <li class="goods-item">
      <div class="goods-about">
        <p class="goods-img">
@@ -222,23 +223,6 @@
       <button class="btn-save" type="button">В закладки</button>
     </div>
     </li>
-
-   <li class="goods-item">
-     <div class="goods-about">
-       <p class="goods-img">
-       <img src="img/index-img/perforator-2.png" alt="Перфоратор-2">
-       </p>
-     <h3 class="goods-title">Перфоратор BOSCH BFG 6000</h3>
-         <p class="goods-price">30500 Р.</p>
-       <p class="goods-price-new">25500 Р.</p>
-     </div>
- <div class="goods-buy">
-   <a class="btn-buy" href="#">Купить</a>
-     <button class="btn-save" type="button">В закладки</button>
- </div>
- </li>
-
-
 
   <li class="goods-item">
     <div class="goods-about">
@@ -333,8 +317,8 @@
     <li class="page-next"><a href="#">Следующая</a></li>
  </ul>
 
- <section class="perforators">
-   <div class="perforators-about">
+ <section class="perforators-main">
+   <div class="perforators-about wrap">
     <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
    <p> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
