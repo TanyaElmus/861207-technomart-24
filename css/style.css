@@ -82,7 +82,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .user-navigation li a {
@@ -104,14 +103,14 @@ ul {
   line-height: 23px;
   color: #ee3643;
   font-style:italic;
-  width: 300px;
-  margin: 0;
-  padding: 0;
+  width: 190px;
+  padding: : 0;
+  margin: 45px 35px 40px 50px;
 }
 
 .contacts-info {
-  width: 300px;
-  margin: 0;
+  width: 270px;
+  margin: 0 32px 0 35px;
   padding: 0;
 }
 
@@ -155,7 +154,7 @@ ul {
   align-items: center;
   float: left;
   margin: 0;
-  padding: 0;
+  padding:  0;
 }
 
 .login-link {
@@ -184,6 +183,7 @@ ul {
 .navigation {
   background-color: #32425c;
   box-shadow: 0px 5px 0px 0px #293449;
+  margin-bottom: 60px;
 }
 
 .navigation a:hover,
@@ -219,7 +219,25 @@ ul {
 }
 
 
-/* <!--здесь будет основной сервис сайта --> */
+.contain-menu {
+  display: flex;
+}
+
+.title-menu {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 22px 0 10px 23px;
+  margin: 0;
+}
+
+.materials-menu {
+width: 300px;
+height: 125px;
+background-color: #ffbf47;
+}
+
 
 .popular-goods {
   background-color: #f9f5f0;
@@ -238,14 +256,8 @@ ul {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
-  width: 254px;
-  height: 39px;
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0 0 0 auto;
+  padding: 10px 70px;
   margin-right: 24px;
 }
 
@@ -266,6 +278,8 @@ ul {
 }
 
 .goods-img {
+  display: block;
+  width: 100%;
   margin-bottom: 9px;
 }
 
@@ -289,6 +303,7 @@ ul {
   text-align: center;
   margin:0;
   margin-bottom: 11px;
+
 }
 
 .goods-price {
@@ -313,12 +328,9 @@ ul {
   text-align: center;
   color: #ffffff;
   background-color: #ee3643;
-  width: 141px;
-  height: 38px;
-  padding: 0;
-  margin: 0 auto;
+  padding: 10px 20px 10px 35px;
   margin-bottom: 20px;
-  vertical-align: middle;
+
 }
 
 .btn-buy  {
@@ -329,13 +341,9 @@ ul {
   text-align: center;
   text-transform: uppercase;
   background-color: #63a63e;
-  width: 135px;
-  height: 35px;
   border-radius: 2px;
   box-shadow: 0px 3px 0px 0px #367315;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px 45px 10px 50px;
   display: none;
 }
 
@@ -347,9 +355,8 @@ ul {
   text-transform: uppercase;
   border: 3px  solid #63a63e;
   border-radius: 2px;
-  width: 135px;
-  height: 38px;
   background-color: transparent;
+  padding: 7px 30px 7px 30px;
   display: none;
 }
 
@@ -400,7 +407,15 @@ ul {
 
 .main-service {
   background-color: #f4f7f9;
+  margin-bottom: 75px;
 }
+
+
+.slider-main {
+  display:flex;
+  justify-content: space-between;
+}
+
 
 .service {
   font-size: 30px;
@@ -409,20 +424,14 @@ ul {
   color: #000000;
   text-transform: uppercase;
   padding-top: 64px;
-  padding-bottom: 20px;
-}
-
-.slider-buttons {
-  width: 25%;
+  padding-bottom: 25px;
+  margin: 0;
 }
 
 .service-buttons {
-  display: flex;
-}
-
-.servise-button {
-  height: 80px;
   background-color: #32425c;
+  height: 187px;
+  width: 240px;
 }
 
 
@@ -431,28 +440,55 @@ ul {
 .slider li:last-child {
   display: none;
 }
-.slider .slider-about {
-  width: 280px;
-  display: inline-block;
-  vertical-align: top;
-}
+
+
 .slider img {
-  width: 380px;
-  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right:0;
 }
 
 .slider {
-  width:75%;
+  width:630px;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 .slider-title {
   font-size: 36px;
-  line-height: 24px;
+  line-height: 36px;
   font-weight: 400;
   text-transform: uppercase;
   color: #32425c;
+  padding-bottom: 25px;
+  margin: 0;
 }
 
+.slider-about-service {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  width: 400px;
+  padding-bottom: 65px;
+  margin: 0;
+}
+
+
+.slider-about {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  width: 280px;
+  padding-bottom: 68px;
+  margin: 0;
+}
 
 .button-credit {
   font-size: 14px;
@@ -472,6 +508,8 @@ ul {
 .about-company {
   display: inline-block;
   width: 540px;
+  padding: 0;
+  margin: 0 75px 85px 0;
 }
 
 .about-company h3 {
@@ -480,32 +518,34 @@ ul {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  padding-bottom: 25px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px
 }
 
-.slider-about {
+.slider-about-company  {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  width: 400px;
+  padding-bottom: 25px;
+  margin: 0;
 }
+
 
 .button-about {
   font-size: 14px;
-  line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
-  width: 220px;
-  height: 39px;
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 12px 38px;
   margin-bottom: 85px;
 }
 
+.information {
+  display: flex;
+}
 
 .wrap-contacts {
   display: inline-block;
@@ -517,9 +557,9 @@ ul {
 }
 
 .map {
-  display: flex;
-  flex-direction: column;
   max-width: 300px;
+  padding: 0;
+  margin: 0 0 40px 0;
 }
 
 .write-us-btn {
@@ -527,11 +567,10 @@ ul {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
-  width: 300px;
-  height: 40px;
   border-radius: 2px;
-  padding: 0;
+  padding: 10px 65px 10px 65px;
   margin: 0 0 0 auto;
+
 }
 
 .company-contacts  {
@@ -539,20 +578,33 @@ ul {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  padding: 0;
+  padding-bottom: 30px;
   margin: 0;
+  font-weight: 400;
 }
 
-.company-contacts p {
+.slider-about-contacts {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  width: 190px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.list {
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .list li {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  padding: 0 0 20px 0;
+  margin: 0;
 }
 
 .redline {
@@ -560,9 +612,19 @@ ul {
 }
 
 
-
 .main-footer {
   background-color: #32425c;
+}
+.footer-top {
+  display: flex;
+}
+
+.footer-description {
+  display: inline-block;
+}
+
+.footer-menu {
+  display: inline-block;
 }
 
 .footer-contacts {
@@ -570,12 +632,13 @@ ul {
   line-height: 24px;
   color: #f3f7f9;
   width: 330px;
-
+  padding: 0;
+  margin-top: 25px;
 }
 
 .footer-navigation {
   display: flex;
-  justify-content: flex-end;
+
   padding-top: 38px;
   padding: 0;
 }
@@ -587,7 +650,7 @@ ul {
   color:#ffffff;
   list-style: none;
   display: block;
-  padding: 25px 60px 32px 60px;
+  padding: 25px 30px 32px 30px;
 }
 
 .footer-navigation a:hover {
@@ -600,10 +663,7 @@ ul {
 
 .footer-catalog {
   display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  padding-top: 30px;
-
+  margin-left:30px;
 }
 
 .footer-catalog a {
@@ -613,7 +673,7 @@ ul {
   color: #ffd180;
   list-style: none;
   display: block;
-  padding: 30px 60px 70px 60px;
+  padding: 0px 30px 70px 30px;
 
 }
 
@@ -627,7 +687,12 @@ ul {
 
 .footer-bottom {
   display: flex;
+  justify-content: space-between;
   background-color: #293449;
+}
+.footer-bottom-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .visually-hidden {
@@ -639,29 +704,42 @@ ul {
   line-height: 18px;
   color: #f3f7f9;
   width: 240px;
-  margin-bottom: 30px;
+  margin-top: 38px;
+  margin-bottom: 35px;
 }
 
-.footer-social {
+.social  {
   list-style: none;
   text-decoration: none;
+  padding: 0;
+  margin-top: 35px;
+  vertical-align: middle;
+}
+
+.social li {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   text-align: center;
-    width: 160px;
+  line-height: 50px;
+  background-color: #212a3a;
 }
 
 .white-wrap {
-  width: 170px;
+  width: 300px;
   display: flex;
-  justify-content: flex-end;
+justify-content: space-between;
+align-items: center;
   padding: 0;
-  margin: 0;
-
 }
 
 .white {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
 .gold {
@@ -684,11 +762,20 @@ ul {
   justify-content: center;
 }
 
+.user {
+  width: 320px;
+}
+
 .name-id {
   width: 300px;
   height: 45px;
   background-color: #ffffff;
-
+ margin: 0;
+ padding-bottom: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 25px;
 }
 
 .name-id a {
@@ -709,6 +796,9 @@ ul {
 
 .user-area {
   display: flex;
+justify-content: center;
+margin:0;
+padding: 0;
 }
 
 .user-area a {
@@ -716,6 +806,7 @@ ul {
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+  padding: 0 15px 45px 15px;
 }
 
 .user-area a:hover {
@@ -754,6 +845,13 @@ ul {
   align-items: center;
 }
 
+.sorting-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .sorting-by a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -764,6 +862,7 @@ ul {
   opacity: 0.3%;
   text-align: center;
   display: flex;
+border-bottom: dashed solid #ee3643;
 }
 
 .sorting p {
@@ -773,6 +872,8 @@ ul {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -802,8 +903,42 @@ ul {
   border: 1px solid #7c1d1d;
   border-radius: 2px;
   background-color: transparent;
-  width: 140px;
+}
+
+.paginator a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  display: inline-block;
+  min-width: 40px;
   height: 40px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.paginator .next {
+min-width: 140px;
+}
+
+.paginator .current {
+  color: white;
+  background-color: #ee3643;
+}
+
+.paginator a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.paginator a:focus {
+  border: 1px solid #ee3643;
 }
 
 .goods {
@@ -827,7 +962,8 @@ ul {
   line-height: 30px;
   font-weight: 400;
   color: #000000;
-  padding: 55px 0 20px 0;
+  padding: 55px 0 30px 0;
+  margin: 0;
 }
 
 .perforators-about p {
@@ -836,4 +972,5 @@ ul {
   line-height: 24px;
   color: #000000;
   padding: 0 0 65px 0;
+  margin: 0;
 }
