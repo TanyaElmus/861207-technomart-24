@@ -337,7 +337,8 @@ align-content: flex-start;
   text-align: center;
   margin:0;
   margin-bottom: 11px;
-
+  min-height: 40px;
+  padding: 0 25px;
 }
 
 .goods-price {
@@ -366,18 +367,50 @@ align-content: flex-start;
   margin: 0 auto 20px;
   width: 122px;
   position: relative;
+   border-radius: 3px;
 }
 
 .goods-price-new::after {
   content: "";
   width: 1px;
   height: 1px;
+
   border: 19px solid transparent;
   border-left: 19px solid #ee3643;
   position: absolute;
   top: 0;
   left: 100%;
+  border-radius: 3px;
 }
+
+.goods-about .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.goods-about .flag-new {
+  background: url("img/index-img/new_flag.png") no-repeat 0 0;
+}
+
+.goods-buy {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  opacity: 0.9;
+  padding: 40px 43px;
+}
+
+/* .goods-buy:hover {
+   display: flex;
+ } */
+
 
 .btn-buy  {
   font-size: 14px;
@@ -390,7 +423,8 @@ align-content: flex-start;
   border-radius: 2px;
   box-shadow: 0px 3px 0px 0px #367315;
   padding: 10px 45px 10px 50px;
-  display: none;
+  margin-bottom: 7px;
+  width: 100%;
 }
 
 .btn-save {
@@ -401,9 +435,9 @@ align-content: flex-start;
   text-transform: uppercase;
   border: 3px  solid #63a63e;
   border-radius: 2px;
-  background-color: transparent;
+  background-color: #ffffff;
   padding: 7px 30px 7px 30px;
-  display: none;
+  min-width: 135px;
 }
 
 .popular-brands {
@@ -880,9 +914,46 @@ padding: 0;
   opacity: 30%;
 }
 
-.breadcrumbs {
-  display: flex;
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
 }
+
+.breadcrumbs li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  position: relative;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  padding: 21px;
+  text-transform: uppercase;
+}
+
+/* .breadcrumbs a:first-child {
+  padding-left: 0px;
+} */
+
+.breadcrumbs a::after {
+  content:"";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  z-index: 1;
+  top: 21px;
+  right: 0px;
+  box-shadow: 1px 1px 0 1px #dddddd;
+  border-radius: 50px 0 0 0;
+  transform: rotate(-45deg) scale(0.6);
+}
+
 
 .perforators-title h1 {
   font-size: 30px;
