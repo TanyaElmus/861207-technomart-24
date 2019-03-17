@@ -72,8 +72,30 @@ ul {
 }
 
 .basket {
-  margin: 0 30px 0 50px;
+  margin: 0 26px 0 50px;
+  position: relative;
+  max-width: 150px;
 }
+
+/* .basket a:hover {
+  background-color: #212a3a;
+} */
+
+.basket::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -34px;
+  background-image: url("img/index-img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* background-color: #ff0000; */
+}
+
 
 .marks {
   margin-right: 20px;
@@ -85,9 +107,6 @@ ul {
   justify-content: center;
 }
 
-/* .user-navigation li a {
-  color: #000000;
-} */
 
 .order-green {
   width: 151px;
@@ -130,6 +149,7 @@ ul {
 }
 
 .number {
+  position: relative;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -142,6 +162,21 @@ ul {
   justify-content: center;
   margin-bottom: 5px;
   margin-top: 46px;
+}
+
+.number::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  background-color: #ff0000;
+  transform: translateY(-50%);
+  left: 0;
+  right: 13px;
+  background-image: url("img/svg-technomart/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .address {
@@ -700,6 +735,62 @@ border-radius: 2px;
 .redline {
   color: #ee3643;
 }
+
+.open-map {
+position: absolute;
+display: block;
+justify-content: center;
+align-items: center;
+padding: 0;
+}
+
+.open-map::after {
+  position: absolute;
+
+}
+
+
+.write-us {
+  position: relative;
+  width: 640px;
+  min-height: 430px;
+  border-top: 7px solid #ff5257;
+  background-color: white;
+  box-shadow:
+}
+
+
+.write-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.write-item {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.write-item label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+}
+
+.write-item input {
+  box-sizing: border-box;
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+  padding: 10px 10px;
+  width: 100%
+}
+
 
 
 .main-footer {

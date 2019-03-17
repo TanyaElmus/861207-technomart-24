@@ -296,7 +296,27 @@
                 </a>
                 <a class="write-us-btn" href="write-to-us.html">Заблудились?напишите нам</a>
           </div>
+          <div class="open-map wrap">
+            <img src="img/index-img/map-popup.jpg" width="950" height="460" alt="Карта">
+              <button class="close-map" type="button">закрыть</button>
+          </div>
 
+          <div class="write-us wrap">
+              <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p class="write-item">
+                      <label for="name">Ваше имя:</label>
+                      <input type="name" name="name" placeholder="Имя Фамилия">
+                  </p>
+                  <p class="write-item">
+                      <label for="e-mail">Ваш e-mail:</label>
+                      <input type="e-mail" name="e-mail" placeholder="email@example.com">
+                  </p>
+                  <p class="write-item">
+                      <label for id="text-letter">Текст письма:</label>
+                      <textarea name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
+                      <button class="button button-send" type="submit">Отправить</button>
+              </form>
+          </div>
         </section>
     </main>
 
@@ -394,25 +414,8 @@
     </footer>
 
 
-    <section class="open-map">
-        <button class="close-map" type="button">закрыть</button>
-    </section>
 
-    <section class="write-us">
-        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="write-item">
-                <label for="name">Ваше имя:</label>
-                <input type="name" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="write-item">
-                <label for="e-mail">Ваш e-mail:</label>
-                <input type="e-mail" name="e-mail" placeholder="email@example.com">
-            </p>
-            <p class="write-item">
-                <label for id="text-letter">Текст письма:</label>
-                <textarea name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
-                <button class="button button-send" type="submit">Отправить</button>
-        </form>
-    </section>
+
+
 </body>
 </html>
