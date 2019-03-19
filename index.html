@@ -301,22 +301,7 @@
               <button class="close-map" type="button">закрыть</button>
           </div>
 
-          <div class="write-us wrap">
-              <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p class="write-item">
-                      <label for="name">Ваше имя:</label>
-                      <input type="name" name="name" placeholder="Имя Фамилия">
-                  </p>
-                  <p class="write-item">
-                      <label for="e-mail">Ваш e-mail:</label>
-                      <input type="e-mail" name="e-mail" placeholder="email@example.com">
-                  </p>
-                  <p class="write-item">
-                      <label for id="text-letter">Текст письма:</label>
-                      <textarea name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
-                      <button class="button button-send" type="submit">Отправить</button>
-              </form>
-          </div>
+
         </section>
     </main>
 
@@ -413,7 +398,27 @@
 </div>
     </footer>
 
-
+    <div class="write-us">
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-form-wrap">
+            <p class="write-item">
+                <label for="name">Ваше имя:</label>
+                <input type="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="write-item">
+                <label for="e-mail">Ваш e-mail:</label>
+                <input type="e-mail" name="e-mail" placeholder="email@example.com">
+            </p>
+          </div>
+            <p class="write-item">
+                <label for="text-letter">Текст письма:</label>
+                <textarea name="text-letter" placeholder="В свободной форме" rows="5"></textarea>
+              </p>
+              <div class="bg-button-send">
+                <button class="button button-send" type="submit">Отправить</button>
+              </div>
+        </form>
+    </div>
 
 
 

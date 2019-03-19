@@ -90,16 +90,33 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   left: -34px;
-  background-image: url("img/index-img/cart-icon.svg");
+  background-image: url("../img/index-img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  /* background-color: #ff0000; */
+  opacity: 0.3;
 }
 
 
 .marks {
   margin-right: 20px;
+  position: relative;
 }
+
+.marks::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: -34px;
+  transform: translateY(-50%);
+  background-image: url("../img/index-img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.3;
+}
+
 
 .contacts {
   display: flex;
@@ -166,15 +183,14 @@ ul {
 
 .number::after {
   position: absolute;
+  display: block;
   content: "";
   width: 20px;
   height: 20px;
   top: 50%;
-  background-color: #ff0000;
   transform: translateY(-50%);
-  left: 0;
-  right: 13px;
-  background-image: url("img/svg-technomart/icon-phone.svg");
+  left: 15px;
+  background-image: url("../img/index-img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -194,6 +210,23 @@ ul {
   margin:0;
 }
 
+.name-id {
+  position: relative;
+}
+
+.icon-id::after {
+  position: absolute;
+  display: block;
+  content: "";
+width: 21px;
+height: 21px;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+  background-image: url("../img/catalog/icon-user-static.svg") no-repeat 0 0;
+
+}
+
 
 .login-link a,
 .registration-link a {
@@ -206,15 +239,42 @@ ul {
   justify-content: center;
   margin: 0;
   padding: 0;
-
 }
 
 .login-link {
   min-width: 121px;
-  padding: 14px 27px 10px 48px;
+  padding: 14px 27px 10px;
   background-color: #ffffff;
   margin-right: 10px;
+  position: relative;
 }
+
+.login-link a {
+  padding-left: 35px;
+}
+
+.login-link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  background-image: url("../img/index-img/icon-login-static.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  fill: #c5c5c5;
+}
+
+.login-link:hover::after {
+  background-image: url("../img/index-img/icon-login-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
 
 .registration-link {
   min-width: 150px;
@@ -751,44 +811,87 @@ padding: 0;
 
 
 .write-us {
-  position: relative;
+  /* position: fixed; */
   width: 640px;
   min-height: 430px;
   border-top: 7px solid #ff5257;
   background-color: white;
-  box-shadow:
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 48px 80px 37px 80px;
 }
 
-
-.write-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-}
 
 .write-item {
-  width: 460px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right:auto;
+  margin: 0;
 }
+
+.write-form-wrap {
+display: flex;
+margin:  10px 0 22px 0;
+}
+
 
 .write-item label {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
   display: block;
+  padding-bottom: 9px;
 }
 
 .write-item input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #a9a9a9;
   box-sizing: border-box;
   border: 2px solid #dee3e4;
   border-radius: 2px;
+  padding: 9px 14px;
+  width: 100%;
+}
+
+.write-item textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #a9a9a9;
+  padding: 9px 14px;
+  width: 100%;
+  border: 2px solid #dee3e4;
   padding: 10px 10px;
-  width: 100%
+  margin-bottom: 37px;
+}
+
+
+.bg-button-send {
+  background-color: #f4f4f4;
+}
+
+.button-send {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  min-width: 460px;
+  max-width: 100%;
+  border-radius: 2px;
+  padding: 10px 10px;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #ee3643;
 }
 
 
@@ -894,7 +997,7 @@ padding: 0;
   line-height: 18px;
   color: #f3f7f9;
   width: 240px;
-  /* margin: 38px 0 33px; */
+
   padding: 0;
   margin: 0;
 
@@ -906,7 +1009,7 @@ padding: 0;
   display: block;
   padding: 0;
   margin: 0;
-  /* margin-top: 35px; */
+
   vertical-align: middle;
 }
 
@@ -926,7 +1029,7 @@ padding: 0;
   align-items: center;
   padding: 0;
   margin: 0;
-  /* margin: 38px 0 33px 0; */
+
 }
 
 .white-wrap p {
@@ -961,13 +1064,27 @@ padding: 0;
   align-items: center;
   justify-content: center;
   margin: 0 0 0 20px;
+  position: relative;
+}
+
+.basket-catalog::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -34px;
+  background-image: url("../img/index-img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.3;
 }
 
 .user {
   min-width: 300px;
   padding: 0;
-
-
 }
 
 .name-id {
@@ -980,12 +1097,16 @@ padding: 0;
 margin: 0;
 }
 
+
+
 .name-id a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   text-align: center;
 }
+
+
 
 .name-id a:hover {
   color: #000000;
@@ -995,6 +1116,15 @@ margin: 0;
   color: #000000;
   opacity:30%;
 }
+
+.logout a::after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/catalog/icon-logout-static.svg") no-repeat 50% 50%;
+}
+
+
 
 .user-area {
   display: flex;
@@ -1038,11 +1168,10 @@ padding: 0;
   text-transform: uppercase;
   margin:0 20px 0 0;
   padding: 0 20px 0 0;
+
 }
 
-/* .breadcrumbs li:first-child {
-  padding-left: 0px;
-} */
+
 
 .breadcrumbs li::after {
   content:"";
@@ -1056,6 +1185,7 @@ padding: 0;
   border-radius: 50px 0 0 0;
   transform: rotate(-45deg)  translateY(-50%);
 }
+
 
 
 .perforators-title h1 {
@@ -1073,9 +1203,6 @@ padding: 0;
   margin-bottom:  20px;
 }
 
-/* .breadcrumbs a {
-  display: flex;
-} */
 
 .catalog-contain {
   display:flex;
