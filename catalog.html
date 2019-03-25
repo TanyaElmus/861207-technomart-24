@@ -51,7 +51,10 @@
                   <p class="name-id">
                      <a class="icon-id" href="name-id.html">Равшан Джамшутович</a>
                   </p>
-                  <a class="logout"><span class="visually-hidden">выйти</span></a>
+                  <p class="logout">
+                  <a class="icon-logout"><span class="visually-hidden">выйти</span></a>
+                </p>
+
                   <ul class="user-area">
                      <li><a href="#">Мои заказы </a>
                      </li>
@@ -112,24 +115,24 @@
                   <fieldset>
                      <legend>Производители:</legend>
                      <ul>
-                        <li class="filter_option">
+                        <li class="filter-option">
                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                            <label for="filter-bosch">Bosch </label>
                         </li>
-                        <li class="filter_option">
+                        <li class="filter-option">
                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="интерскол" id="filter-bosch">
                            <label for="filter-interscol">Интерскол</label>
                         </li>
-                        <li class="filter_option">
+                        <li class="filter-option">
                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Makita" checked id="filter-makita">
                            <label for="filter-makita">Makita</label>
                         </li>
-                        <li class="filter_option">
+                        <li class="filter-option">
                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Dewalt"
                               id="filter-dewalt">
                            <label for="filter-dewalt">Dewalt</label>
                         </li>
-                        <li class="filter_option">
+                        <li class="filter-option">
                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Hitachi"
                               id="filter-hitachi">
                            <label for="filter-hitachi">Hitachi</label>
@@ -139,7 +142,7 @@
                   <fieldset>
                      <legend>Питание:</legend>
                      <ul>
-                        <li class="filter_option">
+                        <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="battery" value="battery" checked
                               id="filter-battery-acc">
                            <label for="filter-battery-akk">Аккумуляторные</label>
@@ -429,13 +432,18 @@
  </div>
      </footer>
 
-         <section class="cart">
+         <section class="cart wrap">
             <form class="buy-form" action="https://technomart.ru" method="post">
-               <p class="buy-item"></p>
-               <h4>Товар добавлен в корзину</h4>
-               <img scr="img/svg-technomart/icon-mark.svg" alt="Товар добавлен в корзину">
-               <button class="button" type="submit">Оформить заказ </button>
-               <button class="button" type="submit">Продолжить Покупки</button>
+              <div class="buy-item">
+
+               <p>Товар добавлен в корзину</p>
+
+               <!-- <img  scr="img/svg-technomart/icon-mark.svg" alt="Товар добавлен в корзину"> -->
+             </div>
+               <div class="buy-item-buttons bg-buy-item">
+               <button class="button-buy-red" type="submit">Оформить заказ </button>
+               <button class="button-buy-white" type="submit">Продолжить Покупки</button>
+             </div>
             </form>
 
          </section>
