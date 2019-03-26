@@ -52,7 +52,7 @@
                      <a class="icon-id" href="name-id.html">Равшан Джамшутович</a>
                   </p>
                   <p class="logout">
-                  <a class="icon-logout"><span class="visually-hidden">выйти</span></a>
+                  <a class="icon-logout" href="#"><span class="visually-hidden">выйти</span></a>
                 </p>
 
                   <ul class="user-area">
@@ -114,7 +114,7 @@
                   </fieldset>
                   <fieldset>
                      <legend>Производители:</legend>
-                     <ul>
+                     <ul class="option-brands">
                         <li class="filter-option">
                            <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                            <label for="filter-bosch">Bosch </label>
@@ -141,7 +141,7 @@
                   </fieldset>
                   <fieldset>
                      <legend>Питание:</legend>
-                     <ul>
+                     <ul class="option-brands">
                         <li class="filter-option">
                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="battery" value="battery" checked
                               id="filter-battery-acc">
@@ -162,18 +162,20 @@
             <div class="sorting wrap">
                <ul class="sorting-by">
                  <span>Сортировка</span>
-                   <li>
+                   <li class="sorting-list">
                      <a href="#">По цене</a>
                   </li>
-                  <li><a href="#">По типу</a>
+                  <li class="sorting-list"><a href="#">По типу</a>
                   </li>
-                  <li>
+                  <li class="sorting-list">
                     <a href="#">По функционалу</a>
                   </li>
                </ul>
                <ul class="sorting-by up-down">
-                  <li><a href="#">по возростанию</a></li>
-                  <li><a href="#">по убыванию</a></li>
+                  <li class="up"><a class="icon-up" href="#"><span class="visually-hidden">по возростанию</span>
+                  </a></li>
+                  <li class="down"><a class="icon-down" href="#"><span class="visually-hidden">по убыванию</span>
+                  </a></li>
                </ul>
             </div>
 
@@ -432,18 +434,21 @@
  </div>
      </footer>
 
-         <section class="cart wrap">
+         <section class="modal-cart">
+           <div class="cart wrap">
             <form class="buy-form" action="https://technomart.ru" method="post">
               <div class="buy-item">
-
                <p>Товар добавлен в корзину</p>
-
-               <!-- <img  scr="img/svg-technomart/icon-mark.svg" alt="Товар добавлен в корзину"> -->
              </div>
                <div class="buy-item-buttons bg-buy-item">
                <button class="button-buy-red" type="submit">Оформить заказ </button>
                <button class="button-buy-white" type="submit">Продолжить Покупки</button>
+               <button class="close-cart" type="button"><span class="visually-hidden">закрыть</span></button>
              </div>
+           </div>
+
+
+
             </form>
 
          </section>

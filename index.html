@@ -234,13 +234,13 @@
                 <div class="service-buttons">
                     <ul class="slider-buttons">
                         <li class="buttons-blue">
-                        <a class="delivery-button" href="delivery">Доставка</a>
+                        <button class="delivery-button" href="delivery">Доставка</button>
                       </li>
                       <li class="buttons-blue">
-                        <a class="guarantee-button" href="guarantee">Гарантия</a>
+                        <button class="guarantee-button" href="guarantee">Гарантия</button>
                         </li>
                         <li class="buttons-blue">
-                        <a class="credit-button" href="credit">Кредит</a>
+                        <button class="credit-button" href="credit">Кредит</button>
                       </li>
                     </ul>
                   </div>
@@ -296,11 +296,11 @@
                 </a>
                 <a class="write-us-btn" href="write-to-us.html">Заблудились?напишите нам</a>
           </div>
-          <div class="open-map wrap">
-            <img src="img/index-img/map-popup.jpg" width="950" height="460" alt="Карта">
-              <button class="close-map" type="button">закрыть</button>
-          </div>
 
+            <div class="modal-map">
+            <img src="img/index-img/modal-map.jpg" width="950" height="460" alt="Карта">
+              <button class="close-map" type="button"><span class="visually-hidden">закрыть</span></button>
+</div>
 
         </section>
     </main>
@@ -398,6 +398,7 @@
 </div>
     </footer>
 
+<section class="modal-form">
     <div class="write-us">
         <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="write-form-wrap">
@@ -417,15 +418,11 @@
               <div class="bg-button-send">
                 <button class="button button-send" type="submit">Отправить</button>
               </div>
-  <button class="close-form" type="button">закрыть</button>
+  <button class="close-form" type="button"><span class="visually-hidden">закрыть</span></button>
   </div>
               </div>
-
-
         </form>
     </div>
-
-
-
+</section>
 </body>
 </html>
